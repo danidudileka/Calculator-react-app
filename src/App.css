@@ -40,8 +40,23 @@ form input[type="button"]:hover {
   border-radius: 0.5rem;
   background-color: #758383;
   grid-column-end: span 4;
-  font-size: 1.5rem;
-  color: white;
-  display: flex;
+  display: block;
   justify-content: right;
+}
+
+form input[type="text"] {
+  width: 100%;
+  text-align: right;
+  background-color: #00000000;
+  border: none;
+}
+
+.calculation {
+  font-size: 1rem;
+  color: white;
+}
+
+.answer {
+  font-size: 2rem;
+  color: white;
 }
