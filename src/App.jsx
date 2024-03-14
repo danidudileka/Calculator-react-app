@@ -30,15 +30,15 @@ function App() {
           onClick={(e) => setCalculation(calculation.slice(0, -1))}
         />
 
-        <input type="button" value="+" onClick={handleClick} />
-        <input type="button" value="-" onClick={handleClick} />
-        <input type="button" value="*" onClick={handleClick} />
-        <input type="button" value="/" onClick={handleClick} />
+        <input type="button" value="+" onClick={handleClick} className="operators"/>
+        <input type="button" value="-" onClick={handleClick} className="operators"/>
+        <input type="button" value="*" onClick={handleClick} className="operators"/>
+        <input type="button" value="/" onClick={handleClick} className="operators"/>
 
         <input type="button" value="7" onClick={handleClick} />
         <input type="button" value="8" onClick={handleClick} />
         <input type="button" value="9" onClick={handleClick} />
-        <input type="button" value="**" onClick={handleClick} />
+        <input type="button" value="^" onClick={e => setCalculation(calculation + '**')} className="operators" />
 
         <input type="button" value="4" onClick={handleClick} />
         <input type="button" value="5" onClick={handleClick} />

@@ -1,3 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;display=swap");
+
+* {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --orange: #ff9500;
+  --black: #1c1c1c;
+  --white: #d4d4d2;
+  --grey: #505050;
+}
+
 .container {
   display: flex;
   justify-content: center;
@@ -7,23 +21,35 @@
 form {
   display: grid;
   grid-template-columns: repeat(4, 100px);
+  padding: 1rem;
+  background-color: var(--black);
+  border-radius: 0.5rem;
 }
 
 form input[type="button"] {
   padding: 1rem;
-  background-color: #eeeeee;
+  background-color: var(--grey);
   margin: 0.5rem;
   border: none;
   outline: none;
   border-radius: 0.5rem;
   font-size: 1.5rem;
-  color: #333333;
+  font-weight: 500;
+  color: var(--white);
 }
 
 form input[type="button"]:hover {
-  background-color: #888888;
-  color: #eeeeee;
-  box-shadow: 4px 4px 4px #33333320;
+  background-color: var(--white);
+  color: var(--black);
+  box-shadow: 4px 4px 4px #c2c2c240;
+}
+
+.operators {
+  background-color: var(--orange) !important;
+}
+
+.operators:hover{
+  color: var(--black) !important;
 }
 
 .span-col-2 {
@@ -32,13 +58,14 @@ form input[type="button"]:hover {
 
 .span-row-3 {
   grid-row-end: span 3;
+  background-color: var(--orange) !important;
 }
 
 .screen {
   padding: 1rem;
   margin: 0.5rem;
   border-radius: 0.5rem;
-  background-color: #758383;
+  background-color: #a4b4b4;
   grid-column-end: span 4;
   display: block;
   justify-content: right;
@@ -51,12 +78,19 @@ form input[type="text"] {
   border: none;
 }
 
+form input[type="text"]:focus {
+  border: none;
+  outline: none;
+}
+
 .calculation {
-  font-size: 1rem;
+  font-size: 1.25rem;
   color: white;
+  font-weight: 400;
 }
 
 .answer {
-  font-size: 2rem;
+  font-size: 2.5rem;
   color: white;
+  font-weight: 600;
 }
