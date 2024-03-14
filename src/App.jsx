@@ -15,6 +15,8 @@ function App() {
   }
 
   return (
+    <>
+    <h1>Simple Calculator</h1>
     <div class="container">
       <form>
         <div class="screen">
@@ -32,8 +34,8 @@ function App() {
 
         <input type="button" value="+" onClick={handleClick} className="operators"/>
         <input type="button" value="-" onClick={handleClick} className="operators"/>
-        <input type="button" value="*" onClick={handleClick} className="operators"/>
-        <input type="button" value="/" onClick={handleClick} className="operators"/>
+        <input type="button" value="×" onClick={e => setCalculation(calculation + '*')} className="operators"/>
+        <input type="button" value="÷" onClick={e => setCalculation(calculation + '/')} className="operators"/>
 
         <input type="button" value="7" onClick={handleClick} />
         <input type="button" value="8" onClick={handleClick} />
@@ -59,6 +61,7 @@ function App() {
         <input type="button" value="." onClick={handleClick} />
       </form>
     </div>
+    </>
   );
 }
 

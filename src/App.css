@@ -5,6 +5,10 @@
   font-family: "Poppins", sans-serif;
 }
 
+body {
+  margin: 1rem;
+}
+
 :root {
   --orange: #ff9500;
   --black: #1c1c1c;
@@ -16,6 +20,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 80vh;
 }
 
 form {
@@ -48,7 +53,7 @@ form input[type="button"]:hover {
   background-color: var(--orange) !important;
 }
 
-.operators:hover{
+.operators:hover {
   color: var(--black) !important;
 }
 
@@ -65,7 +70,7 @@ form input[type="button"]:hover {
   padding: 1rem;
   margin: 0.5rem;
   border-radius: 0.5rem;
-  background-color: #a4b4b4;
+  background-color: var(--white);
   grid-column-end: span 4;
   display: block;
   justify-content: right;
@@ -85,12 +90,17 @@ form input[type="text"]:focus {
 
 .calculation {
   font-size: 1.25rem;
-  color: white;
+  color: var(--grey);
   font-weight: 400;
 }
 
 .answer {
   font-size: 2.5rem;
-  color: white;
+  color: var(--black);
   font-weight: 600;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
 }
