@@ -1,0 +1,47 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  display: grid;
+  grid-template-columns: repeat(4, 100px);
+}
+
+form input[type="button"] {
+  padding: 1rem;
+  background-color: #eeeeee;
+  margin: 0.5rem;
+  border: none;
+  outline: none;
+  border-radius: 0.5rem;
+  font-size: 1.5rem;
+  color: #333333;
+}
+
+form input[type="button"]:hover {
+  background-color: #888888;
+  color: #eeeeee;
+  box-shadow: 4px 4px 4px #33333320;
+}
+
+.span-col-2 {
+  grid-column-end: span 2;
+}
+
+.span-row-3 {
+  grid-row-end: span 3;
+}
+
+.screen {
+  padding: 1rem;
+  margin: 0.5rem;
+  border-radius: 0.5rem;
+  background-color: #758383;
+  grid-column-end: span 4;
+  font-size: 1.5rem;
+  color: white;
+  display: flex;
+  justify-content: right;
+}
